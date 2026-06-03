@@ -1,0 +1,48 @@
+import testImg from "../assets/test1.webp";
+
+export const tests = [
+  {
+    id: 1,
+    title: "DSA Mastery Test Series",
+    type: "Online",
+    totalTest: 1,
+    totalQuestion: 100,
+    language: "English/Hindi",
+    totalAmount: "Free",
+    questionType: "NA",
+    img: testImg,
+  },
+  {
+    id: 2,
+    title: "Civil Engineering Test Series",
+    type: "Online",
+    totalTest: 21,
+    totalQuestion: 800,
+    language: "Hindi",
+    totalAmount: "₹149/-",
+    questionType: "SCQ",
+    img: testImg,
+  },
+  {
+    id: 3,
+    title: "Law Test Series",
+    type: "Online",
+    totalTest: 26,
+    totalQuestion: 300,
+    language: "English/Hindi",
+    totalAmount: "₹299/-",
+    questionType: "SCQ",
+    img: testImg,
+  },
+  {
+    id: 4,
+    title: "Management Test Series",
+    type: "Offline",
+    totalTest: 25,
+    totalQuestion: "NA",
+    language: "English",
+    totalAmount: "₹2999/-",
+    questionType: "NA",
+    img: testImg,
+  },
+];

@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@reference "tailwindcss";
+
+@import "react-datepicker/dist/react-datepicker.css";
+
+/* ------------------- */
+/* Global Body Styles  */
+/* ------------------- */
+body {
+  @apply bg-[#F9FAFB] text-[#1E293B];
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* Fonts */
+.font-heading {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Colors */
+.text-primary {
+  color: #2563EB;
+}
+
+.text-secondary {
+  color: #475569;
+}
+
+.bg-primary {
+  background-color: #2563EB;
+}
+
+.bg-light {
+  background-color: #F9FAFB;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply bg-[#2563EB] text-white rounded-md px-6 py-3 font-medium transition;
+}
+
+.btn-primary:hover {
+  @apply bg-blue-700;
+}
+
+/* -------------------------------- */
+/* BranchA root default + animation */
+/* -------------------------------- */
+:root {
+  font-family: 'Open Sans', sans-serif;
+  color: #124734;
+  background-color: #F9FAFB;
+}
+
+@keyframes fadeIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* NOTE: No #root styling here */

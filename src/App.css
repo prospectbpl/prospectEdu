@@ -1,0 +1,48 @@
+@import "tailwindcss";
+#root {
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* | Use                            | Color                  | HEX Code  | Notes                                         |
+| ------------------------------ | ---------------------- | --------- | --------------------------------------------- |
+| **Primary Button / Highlight** | Green                  | `#009846` | Main action color — use for buttons and links |
+| **Accent**                     | Light Green            | `#A7E1B2` | Use for hover states, highlights, or icons    |
+| **Background**                 | Off-white / Light Gray | `#F9FAFB` | Keep it neutral for readability               |
+| **Text (Dark)**                | Deep Green             | `#124734` | Use for main text to match the theme softly   |
+| **Secondary Text**             | Grayish Green          | `#5B7065` | For less important text or descriptions       |
+| **Card Background**            | White                  | `#FFFFFF` | Keep cards clean and modern                   | */
