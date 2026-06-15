@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import scholarshipImg from "../../assets/Scholarship.webp";
-import scholarshipPool from "../../assets/scholarshipPool.webp";
+import scholarshipPool from "../../assets/ScholarshipPool.webp";
 import HeaderSection from "../../components/HeaderSection";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer";
