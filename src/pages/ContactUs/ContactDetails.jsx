@@ -10,7 +10,7 @@ const ContactDetails = () => {
   const SITE_URL = import.meta.env.VITE_SITE_URL || window.location.origin;
   const canonicalUrl = `${SITE_URL}/contact`;
 
-  const pageTitle = "Contact Us | Prospect Education";
+  const pageTitle = "Contact Us | Prospect Education ";
   const pageDescription =
     "Contact Prospect Education for course guidance, support, or queries. Reach us by phone, email, or visit our office in Bhopal.";
 
