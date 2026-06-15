@@ -16,7 +16,7 @@ const Blog = () => {
 
   const pageTitle = "Blog | ProspectEdu";
   const pageDescription =
-    "Explore helpful blogs from ProspectEdu—technology, education, careers, and more. Simple explanations and useful insights.  ";
+    "Explore helpful blogs from ProspectEdu—technology, education, careers, and more. Simple explanations and useful insights.";
 
   useEffect(() => {
     (async () => {
