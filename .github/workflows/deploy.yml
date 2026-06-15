@@ -22,10 +22,7 @@ jobs:
         run: npm install
 
       - name: 🏗️ Build Project
-        run: CI=false npm run build:server1
-
-      - name: 🔍 Check build folder
-        run: ls -la build
+        run: npm run build
 
       - name: 🚀 Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -33,6 +30,5 @@ jobs:
           server: ${{ secrets.FTP_HOST_1 }}
           username: ${{ secrets.FTP_USERNAME_1 }}
           password: ${{ secrets.FTP_PASSWORD_1 }}
-
-          # local-dir: ./build/
-          # server-dir: ./public_html
+          local-dir: ./dist/
+          server-dir: ./public_html/
