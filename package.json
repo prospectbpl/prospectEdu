@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:server1": "env-cmd -f .env.server1 react-scripts build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
