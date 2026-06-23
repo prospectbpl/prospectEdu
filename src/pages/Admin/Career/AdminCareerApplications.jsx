@@ -23,9 +23,10 @@ function Badge({ status }) {
 
 function resumeHref(a) {
   const url = a?.resumeUrl || "";
+  const BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api/v1";
   if (!url) return "";
   if (url.startsWith("http://") || url.startsWith("https://")) return url;
-  return `http://localhost:5000${url}`;
+  return `${BASE}${url}`;
 }
 
 async function forceDownloadPdf(url, filename = "resume.pdf") {

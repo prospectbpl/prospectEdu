@@ -62,18 +62,18 @@ export default function SignupForm() {
       };
 
       const res = await authApi.register(payload);
-// ✅ NEW: Admin pending approval flow (same as teacher)
-if (backendRole === "admin" && res.data?.pendingApproval) {
-  sessionStorage.removeItem("accessToken");
-  sessionStorage.removeItem("user");
+      // ✅ NEW: Admin pending approval flow (same as teacher)
+      if (backendRole === "admin" && res.data?.pendingApproval) {
+        sessionStorage.removeItem("accessToken");
+        sessionStorage.removeItem("user");
 
-  setToastError(
-    res.data?.message || "Your admin request is pending approval."
-  );
+        setToastError(
+          res.data?.message || "Your admin request is pending approval."
+        );
 
-  navigate("/login", { replace: true });
-  return;
-}
+        navigate("/login", { replace: true });
+        return;
+      }
 
       // ✅ NEW: Teacher pending approval flow
       if (backendRole === "teacher" && res.data?.pendingApproval) {

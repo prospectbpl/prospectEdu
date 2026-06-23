@@ -1,7 +1,8 @@
 import axios from "axios";
 
+const BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api/v1";
 export const api = axios.create({
-  baseURL: "http://localhost:5000/api/v1", // ✅ FIXED
+  baseURL: BASE, // ✅ FIXED
   withCredentials: true,
 });
 
@@ -25,10 +26,10 @@ api.interceptors.response.use(
       !originalRequest._retry
     ) {
       originalRequest._retry = true;
-
+      const BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api/v1";
       try {
         const res = await axios.post(
-          "http://localhost:5000/api/v1/auth/refresh",
+          `${BASE}/auth/refresh`,
           {},
           { withCredentials: true }
         );
