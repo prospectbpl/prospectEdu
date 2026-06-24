@@ -1,5 +1,5 @@
 import { api } from "../lib/api";
-const BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api/v1";
+const BASE = import.meta.env.VITE_API_BASE_URL || "https://prospectedu-backend.prospectlegal.in//api/v1";
 const authHeader = () => {
   const token = sessionStorage.getItem("accessToken");
   return token ? { Authorization: `Bearer ${token}` } : {};

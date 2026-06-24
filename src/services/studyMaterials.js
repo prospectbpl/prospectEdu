@@ -9,7 +9,7 @@ export const studyMaterialsApi = {
   remove: (id) => api.delete(`/study-materials/${id}`),
   studentList: (params) => api.get("/study-materials/student", { params: { ...params, t: Date.now() } }),
   fileUrl: (id) =>
-    `${import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api/v1"}/study-materials/${id}/file`,
+    `${import.meta.env.VITE_API_BASE_URL || "https://prospectedu-backend.prospectlegal.in//api/v1"}/study-materials/${id}/file`,
 
   // ✅ download/view as blob
   getFileBlob: (id) =>

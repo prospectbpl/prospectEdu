@@ -42,7 +42,7 @@ deleteLesson: (lessonId) =>
   api.delete(`/content/lessons/${lessonId}`, { headers: authHeader() }),
 // ✅ stream lesson file inline (PDF opens in browser)
 lessonFileUrl: (lessonId) =>
-  `${import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api/v1"}/content/lessons/${lessonId}/file`,
+  `${import.meta.env.VITE_API_BASE_URL || "https://prospectedu-backend.prospectlegal.in//api/v1"}/content/lessons/${lessonId}/file`,
 
 updateLesson: (lessonId, payload) =>
   api.patch(`/content/lessons/${lessonId}`, payload, { headers: authHeader() }),

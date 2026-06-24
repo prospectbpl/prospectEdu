@@ -23,7 +23,7 @@ function safeName(name, fallback = "file.pdf") {
 }
 
 export default function TeacherStudyMaterials() {
-  const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api/v1";
+  const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://prospectedu-backend.prospectlegal.in//api/v1";
 
   const [isCollapsed, setIsCollapsed] = useState(false);
   const sidebarWidthPx = isCollapsed ? 80 : 256;
